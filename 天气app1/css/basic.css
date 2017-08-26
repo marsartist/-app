@@ -1,0 +1,128 @@
+@import url(layout.css);
+@import url(color.css);
+@import url(typography.css);
+
+*{margin: 0px;
+padding: 0px;
+box-sizing:border-box;
+}
+input:focus{
+	border: none;
+	outline: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-size: 18px;
+	background-color: #3592C1;
+	color:#fff;
+}
+header{
+	width: 100%;
+	height: 10%;
+	background-color: #fff;
+	display: flex;
+	text-align: center;
+}
+.btnleft{
+	width: 80px;
+	display: inline-block;
+	background-color: #fff;
+	height: 100%;
+	margin: auto 0rem auto 0rem;
+}
+.boxmiddle{
+	flex:1;
+	height: 100%;
+	margin: auto 0px;
+	position: relative;
+	border: none;
+}
+.btnright{
+	display: block;
+	background-color: #fff;
+	width:80px;
+	height: 100%;
+	margin: auto 0rem auto 0rem;
+}
+section{
+	 width: 100%;
+	 height: calc(100% - 10%);
+}
+body hr{
+	color: #0B3D73;
+}
+.totop{
+	display: block;
+	position: fixed;
+	top: 0.2rem;
+	right: 0.5rem;
+	width: 3rem;
+	height: 3rem;
+	background-color: #FFEE99;
+	border-radius: 1.5rem;
+	text-align: center;
+	line-height: 3rem;
+}
+.totop>a{
+	font-size:2rem;
+	color: #fff;
+	text-decoration: none;
+}
+@media(min-width: 320px){
+	.btnleft{
+		width:55px;
+	}
+	.btnright{
+		width:55px;
+	}
+	.diary-item{
+		font-size: 1rem;
+	}
+}
+@media(min-width: 360px){
+	.btnleft{
+		width:65px;
+	}
+	.btnright{
+		width:65px;
+	}
+
+}
+ @media(min-width: 768px){
+	html,body{
+		font-size:28px;
+	}
+	.boxmiddle span{
+		line-height: 1.8;
+		font-size:1.3rem;
+	}
+	.read{
+		background-position: 0.3rem 0.4rem;
+	}
+	.write{
+		background-position:0.4rem 0.3rem ;
+	}
+	#sectionOne{
+		padding: 2rem 1rem 2rem 1rem;
+	}
+}
+@media(min-width: 992px){
+	html,body{
+		font-size:32px;
+	}
+	.boxmiddle span{
+		line-height: 1.6;
+		font-size:1.3rem;
+	}
+}
+@media(min-width: 1200px){
+	html,body{
+		font-size:28px;
+	}
+	
+
+} 
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+<body id="emotionPage">
+    <header>
+            <span class="btnleft read">
+                <a href="#sectionOne" id="read">
+                    <img src="css/look.svg" alt="">
+                </a>
+            </span>
+            <div class="boxmiddle sort">
+               <span id="timesort">时间</span>
+               <span id="colorsort">颜色</span> 
+            </div>
+            <span class="btnright write">
+                <a href="#sectionTwo">
+                    <img src="css/write.svg" alt="">
+                </a>
+            </span>
+    </header>
+    <!--<span id="functiontip">向左滑动可删除心情条</span>-->
+    <section id="emotionPagecontext">
+     <!-- 第一个页面 -->
+        <div id="sectionOne">
+        </div>
+    <!-- 第二个页面 -->
+        <div id="sectionTwo">
+            <div id="diaryform">
+                <form action="" id="form-context">
+                    <p class="emotianvalue">心情值：<input type="color"  id="emotianvalue"/></p>
+                    <p class="dairycontext"><textarea  id="dairycontext" placeholder="读一些事请....."></textarea></p>
+                    <p class="save"><button id="save">保存</button></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <span class="totop"><a href="index.html">&lt;</a></span>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

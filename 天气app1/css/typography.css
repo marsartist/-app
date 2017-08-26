@@ -1,0 +1,387 @@
+/*.navbtn{
+	background-image: url("../images/catalog.png");
+	background-repeat: no-repeat;
+	background-size:70% 70%;
+	background-position: 0.7rem 0.6rem;
+}*/
+/*index页面,第一个页面*/
+.navbtn>a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	border: 0;
+}
+.navbtn>a>img{
+	position: relative;
+	top: 50%;
+	margin-top: -16px;
+}
+#search{
+	width: 100%;
+	height: 100%;
+	font-size:1.2rem;
+	padding-left: 10px; 
+	border: none;
+}
+#gosearch{
+	position: absolute;
+	height: 70%;
+	width: 36px;
+	right: 5%;
+	top: 28%;
+	background-color: #fff;
+}
+.emotion>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.emotion>a>img{
+	position: relative;
+	top:50%;
+	margin-top: -17px;
+}
+/* section 部分 */
+.weather-summary{
+	height: 40%;
+	width: 100%;
+	text-align: center;
+}
+.weather-summary>.city{
+	font-size: 2rem;
+	margin-top: 0.8rem;
+}	
+.weather-summary>.weather-quarety{
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+}
+.weather-summary>.temperature{
+	font-size: 3rem;
+	margin-top: 0.5rem;
+}
+.weather-time{
+	width: 100%;
+	display: flex;
+	padding-left: 0.5rem;
+}
+.weather-time>.day{
+	flex:1;
+}
+.weather-time>.today{
+	flex:3;
+}
+.weather-time>span:last-child{
+	flex:1;
+	text-align:center;
+}
+.weather-time>.Wdata2{
+	flex:2;
+	text-align: center;
+}
+.weather-datas{
+	width: 100%;
+/* 	height: ; */
+	overflow-x:hidden; 
+}
+.weather-datas>.hours,.weather-datas>.Htempare{
+	display: flex;
+	text-align: center;
+	margin-top: 0.5em;
+	width: 200%;
+	position: relative;
+	-webkit-animation: moveX 30s linear 1s infinite ;
+	-o-animation: moveX 30s linear 1s infinite ;
+	animation: moveX 30s linear 1s infinite ;
+}
+@keyframes moveX{
+	0%{
+		left: 0%;
+	}
+	40%{
+		left: -100%;
+	}
+	50%{
+		left: -100%;
+	}
+	90%{
+		left: 0%;
+	}
+	100%{
+		left: 0%;
+	}
+}
+@-webkit-keyframes moveX{
+	0%{
+		left: 0%;
+	}
+	40%{
+		left: -100%;
+	}
+	50%{
+		left: -100%;
+	}
+	90%{
+		left: 0%;
+	}
+	100%{
+		left: 0%;
+	}
+}
+@-o-keyframes moveX{
+	0%{
+		left: 0%;
+	}
+	40%{
+		left: -100%;
+	}
+	50%{
+		left: -100%;
+	}
+	90%{
+		left: 0%;
+	}
+	100%{
+		left: 0%;
+	}
+}
+.weather-datas>.hours>span,.weather-datas>.Htempare>span{
+	flex:1;
+}
+.weather-datas>.Htempare{
+	margin-top: 2em!important;
+	margin-bottom: 0.5rem;
+
+}
+.detail-data{
+	text-align:center;
+	margin:1rem 0;
+}
+.tip{
+	padding-top: 0.5rem;
+	padding-left: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+/* 第二个页面 emotionPage*/
+#emotionPage .totop{
+	position: fixed;
+	left: 85%;
+	top: 10%;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 1rem;
+	font-size: 0.5rem;
+	line-height: 2rem;
+}
+header .read{
+	margin-left: 1rem;
+}
+.read>a,.write>a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+.read>a>img,.write>a>img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -26px;
+	margin-top: -26px;
+}
+.sort>span{
+	display: inline-block;
+	color: #fff;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	font-size: 1rem;
+	background-color:#3592C1;
+}
+#timesort{
+	position: absolute;
+	 top: 50%;
+	left: 25%; 
+	margin-top: -1.5rem;
+	margin-left: -1.5rem;
+	line-height: 3rem; 
+}
+#colorsort{
+	position: absolute;
+	 top: 50%;
+	left: 75%; 
+	margin-top: -1.5rem;
+	margin-left: -1.5rem;
+	line-height: 3rem;
+}
+header .write{
+	margin-right: 1rem;
+}
+#emotionPagecontext{
+	overflow:hidden;
+	/*background-color: #FFEE99;*/
+}
+/* sectionOne */
+#sectionOne{
+	width:100%;
+	height: 100%;
+	padding: 3rem 2rem 3rem 2rem;
+	overflow-y: scroll;
+}
+.diary-item{
+	font-size: 1.2rem;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	color: #000;
+	padding-top: 0.3rem;
+	background-color: #FFEE99;
+	border-radius: 0.2rem;
+	position: relative;
+}
+.diary-item>span:first-child,.diary-item>p{
+	margin-left: 1rem;
+}
+.diary-item>span:first-child{
+	display: inline-block;
+}
+.diary-item>span+span{
+	vertical-align: 0.4rem;
+}
+.diary-item>p{
+	width: 90%;
+	line-height: 1.5;
+	word-break:break-all;
+}
+/*#emotionPage>#functiontip{
+		position: fixed;
+		top: 0;
+		color: red;
+
+		-ms-animation: funtip 3s linear;
+		-webkit-animation: funtip 3s linear;
+		animation: funtip 3s linear;
+}*/
+/*@-moz-keyframes funtip{
+	from{left:100%;}
+	to{left:-20%;}
+}
+@-webkit-keyframes funtip{
+	from{left:100%;}
+	to{left:-20%;}
+}
+@-moz-keyframes funtip{
+	from{left:100%;}
+	to{left:-20%;}
+}*/
+/* emotion页面中sectionTwo */
+#sectionTwo{
+	width:100%;
+	height: 100%;
+}
+#diaryform{
+	width: 100%;
+	height: 100%;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	padding: 1rem 2rem 1rem 2rem;
+}
+#form-context{
+	width: 100%;
+	height: 100%;
+}
+#diaryform .emotianvalue{
+	height: 10%;
+	/*padding: 0.8rem 0.8rem 0.8rem 0;*/
+}
+#diaryform .emotianvalue>input{
+	width:3rem;
+	height:1.5rem;
+	vertical-align: center;
+}
+#diaryform>#form-context>.dairycontext{
+	width: 100%;
+	height: 75%;
+	background-color: #123;
+}
+#diaryform .dairycontext>textarea{
+	width: 100%;
+	height: 100%;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	padding: 0.8rem;
+}
+#form-context>.save{
+	height: 10%;
+	text-align: right;
+	padding: 0.5rem 0.5rem 0rem;
+	
+}
+#form-context>.save>button{
+	color: #fff;
+	width: 3rem;
+	height: 2rem;
+	background-color: #20678B;
+	border: none;
+	font-size: 1rem;
+	margin: auto 0;
+	box-shadow: 0px 0px 5px 7px #135678; 
+}
+
+/*第三个页面 fWeather*/
+.futurePage{
+	position: relative;
+	background-color:#133749;
+}
+.futureBox{
+	font-size: 1.2rem;
+	width: 100%;
+	overflow-y: scroll;
+	
+}
+.futurecont{
+	list-style: none;
+	text-align: center;
+	color: #fff;
+}
+.futureItem{
+	width: 100%;
+}
+.futureItem:last-child{
+	border-bottom: none;
+}
+.futureItem>span{
+	display: block;
+	height: 3rem;
+	line-height:3rem;
+	width: 100%;
+	border-bottom: 0.2rem solid #fe9;
+	background-color: rgb(53,146,193);
+	position: relative;/*另有时间的span重新创建一个层叠上下文，，或块级上下文*/
+}
+
+.ItemBox{
+	height: 0rem;
+	opacity: 0;
+	width: 100%;
+	padding:0rem 2rem 0 2rem;
+	color: #fff;
+	background:linear-gradient(to bottom,#7BAFC9,#439ECC);  
+}
+.active{
+	height: auto;
+	opacity: 1;
+	transition:all 2s;
+}
+
+.futureBox .ItemBox>p{
+	display: flex;
+	padding-top: 0.5rem;
+}
+.ItemBox>p>span{
+	flex:1;
+	text-align: center;
+}
+.ItemBox .tip{
+	text-align: left;
+	margin-left: -1rem;	
+}
